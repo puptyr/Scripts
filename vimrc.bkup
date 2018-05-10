@@ -1,0 +1,34 @@
+" Enable syntax highlighting
+syntax on
+
+" Don't wrap code in sized windows
+set nowrap
+set noai
+
+" Some abbreviations
+" Note-to-self: abbreviations with multiple lines NEED a space behind the name
+iab xbash #!/bin/bash
+\<CR>#####################################################################
+\<CR>#         FILE:
+\<CR>#        USAGE:  ./
+\<CR>#
+\<CR>#  DESCRIPTION:
+\<CR>#      OPTIONS:  ---
+\<CR># REQUIREMENTS:  ---
+\<CR>#         BUGS:  ---
+\<CR>#        NOTES:  ---
+\<CR>#       AUTHOR:  Sander <sander@thisonewasavailable.com>
+\<CR>#      VERSION:  0.1
+\<CR>#      CREATED:  <c-r>=strftime("%F")<cr>
+\<CR>#     REVISION:  ---
+\<CR>#####################################################################
+
+iab xpy #!/usr/bin/env python
+\<CR>#####################################################################
+\<CR>#       AUTHOR:  Sander <sander@thisonewasavailable.com>
+\<CR>#      VERSION:  0.1
+\<CR>#      CREATED:  <c-r>=strftime("%F")<cr>
+\<CR>#####################################################################
+
+" Insert date
+iab xdate <c-r>=strftime("%F")<cr>
